@@ -79,7 +79,7 @@ Temporary Items
 *.class
 
 # Generated files
-bin/
+#bin/
 gen/
 out/
 
@@ -438,7 +438,7 @@ local.properties
 # C++ objects and libs
 *.slo
 *.lo
-*.o
+#*.o
 *.a
 *.la
 *.lai
@@ -512,14 +512,14 @@ test-results/
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Aa][Rr][Mm]/
+#[Rr]elease/
+#[Rr]eleases/
+#x64/
+#x86/
+#[Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 [Ll]og/
 

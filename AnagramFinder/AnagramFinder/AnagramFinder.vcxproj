@@ -74,10 +74,45 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\</OutDir>
+    <TargetExt>.o</TargetExt>
+  </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="AnagramFinder.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnagramFinder.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
